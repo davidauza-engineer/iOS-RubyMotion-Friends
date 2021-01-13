@@ -24,7 +24,7 @@ Motion::Project::App.setup do |app|
   # ===========================================================================================
   # 2. Set your app name (this is what will show up under the icon when your app is installed).
   # ===========================================================================================
-  app.name = 'Friends'
+  app.name = 'My friends'
 
   # version for your app
   app.version = '1.0'
@@ -58,6 +58,7 @@ Motion::Project::App.setup do |app|
   # reasonable defaults
   app.device_family = [:iphone, :ipad]
   app.interface_orientations = [:portrait]
+  app.identifier = 'io.rubysensei.myfriends'
   app.info_plist['UIRequiresFullScreen'] = true
   app.info_plist['ITSAppUsesNonExemptEncryption'] = false
 
