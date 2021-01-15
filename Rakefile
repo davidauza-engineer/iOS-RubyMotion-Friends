@@ -61,6 +61,7 @@ Motion::Project::App.setup do |app|
   app.identifier = 'io.rubysensei.myfriends'
   app.info_plist['UIRequiresFullScreen'] = true
   app.info_plist['ITSAppUsesNonExemptEncryption'] = false
+  app.info_plist['NSAppTransportSecurity'] = { 'NSAllowsArbitraryLoads' => true }
 
   # ===========================================================================================
   # 7. To deploy to an actual device, you will need to create a developer certificate at:
