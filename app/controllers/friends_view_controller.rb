@@ -31,6 +31,7 @@ class FriendsViewController < UIViewController
   def refresh_friends
     # puts 'Actualizar'
     Friend.request
+    view.reloadData
   end
 
   def tableView(tableView, numberOfRowsInSection: section)

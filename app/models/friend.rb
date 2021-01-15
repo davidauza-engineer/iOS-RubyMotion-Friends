@@ -13,6 +13,12 @@ class Friend
 
   def self.request
     friends = require_resource('http://gzfrancisco.name/resources/friends.json')
-    puts friends
+    create friends
+  end
+
+  def self.create(object)
+    object[:friends].each do |friend|
+      new(friend[:first_name])
+    end
   end
 end
