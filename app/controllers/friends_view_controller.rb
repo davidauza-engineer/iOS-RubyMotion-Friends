@@ -29,7 +29,8 @@ class FriendsViewController < UIViewController
   end
 
   def refresh_friends
-    puts 'Actualizar'
+    # puts 'Actualizar'
+    Friend.request
   end
 
   def tableView(tableView, numberOfRowsInSection: section)
