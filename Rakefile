@@ -47,7 +47,7 @@ Motion::Project::App.setup do |app|
   #    https://developer.apple.com/account/ios/identifier/bundle. You must enroll into Apple's
   #    Developer program to get access to this screen (there is an annual fee of $99).
   # ===========================================================================================
-  # app.identifier = ''
+  app.identifier = 'io.rubysensei.myfriends'
 
   # ===========================================================================================
   # 6. If you need to reference any additional iOS libraries, use the config array below.
